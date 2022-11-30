@@ -34,6 +34,31 @@ p {
     line-height: 1.2em;
 }
 
+/* here come the images styles */
+
+.container.image {
+  max-width: 1200px;
+  padding: 0;
+}
+
+
+
+/*getting ALL elements with class'img' that are direc descendants of class 'collage' */
+.collage > .img {
+  flex-basis: calc(25% - 2.5px);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.collage > .img.active {
+  opacity: 1;
+}
+
+
+img {
+  width: 100%;
+  display: block;
+}
 
 
 /*********************************************************************
@@ -42,6 +67,11 @@ p {
 @media(min-width: 681px) {
     /* Any adjustments for tablets and larger go here.
     Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    .collage {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
 }
 
 /*********************************************************************
