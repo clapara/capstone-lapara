@@ -80,7 +80,6 @@ p {
 
 .hero {
   position: relative;
-  
 }
 
 .hero .video-frame {
@@ -114,6 +113,8 @@ img {
 }
 
 
+
+
 /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
 *********************************************************************/
@@ -126,7 +127,15 @@ img {
       justify-content: space-between;
     }
 
+    .hero {
+      min-height: 175vh;
+    }
 
+    .hero .video-frame {
+      position: sticky;
+      position: -webkit-sticky;
+      top: 0;
+    }
 }
 
 /*********************************************************************
