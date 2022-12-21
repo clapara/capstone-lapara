@@ -22,6 +22,7 @@ const images = document.querySelectorAll(".collage > .img");
         });
     });
 
+
 function onYouTubeIframeAPIReady() {
     const video_player = document.querySelector(".yt-player");
     const video_id = video_player.dataset.videoId;
@@ -33,7 +34,9 @@ function onYouTubeIframeAPIReady() {
         'playsinline': 1,
         'controls': 0,
         'modestbranding': 1,
-        'showinfo': 0
+        'showinfo': 0,
+        'loop': 1,
+        'rel': 0
       },
       events: {
         'onReady': onPlayerReady,
@@ -56,5 +59,3 @@ function onStateChange(e){
         }, 500);
     }
 }
-
-
