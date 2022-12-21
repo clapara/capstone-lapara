@@ -30,8 +30,19 @@ html, body {
     margin   : 0 auto;
 }
 
+.quotes {
+  font-size: 20px;
+  color: #616063;
+  font-style: italic;
+}
+
 p {
     line-height: 1.2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 { 
+  font-family:Georgia, 'Times New Roman', Times, serif
 }
 
 .video-frame, 
@@ -112,6 +123,16 @@ img {
   display: block;
 }
 
+/* accordion styles */
+summary {
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+li {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
 
 
