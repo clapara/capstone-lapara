@@ -30,12 +30,6 @@ html, body {
     margin   : 0 auto;
 }
 
-.quotes {
-  font-size: 20px;
-  color: #616063;
-  font-style: italic;
-}
-
 p {
     line-height: 1.2em;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -76,9 +70,17 @@ h2 {
   padding: 0;
 }
 
+/*regular images styles*/
+
+.regular {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
-/*getting ALL elements with class'img' that are direc descendants of class 'collage' */
+
+/*getting ALL elements with class'img' that are direct descendants of class 'collage' */
 .collage > .img {
   flex-basis: calc(25% - 2.5px);
   opacity: 0;
