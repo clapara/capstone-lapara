@@ -70,12 +70,23 @@ h2 {
   padding: 0;
 }
 
+.container.iframe {
+  max-width: 1200px;
+  padding: 0;
+}
+
 /*regular images styles*/
 
 .regular {
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* collage for charts */
+.collage > .iframe {
+  flex-basis: calc(50% - 2.5px);
+  
 }
 
 
@@ -125,16 +136,6 @@ img {
   display: block;
 }
 
-/* accordion styles */
-summary {
-  font-size: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-
-}
-
-li {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
 
 
 
